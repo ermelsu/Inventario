@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Produto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="home-btn">🏠</a>
+    <h1>Cadastro de Produto</h1>
+    <form id="cadastroForm">
+      <input type="text" placeholder="Código do item" name="codigo" required />
+      <input type="text" placeholder="Nome do produto" name="nome" required />
+      <input type="text" placeholder="Descrição detalhada" name="descricao" />
+      <input type="text" placeholder="Marca" name="marca" />
+      <input type="number" placeholder="Quantidade física" name="quantidade" required />
+      <input type="text" placeholder="Unidade de medida" name="unidade" required />
+      <input type="text" placeholder="Localização" name="localizacao" required />
+      <input type="text" placeholder="Validade (se aplicável)" name="validade" />
+      <input type="text" placeholder="Situação" name="situacao" />
+      <textarea placeholder="Observações" name="observacoes"></textarea>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <div id="popup" class="popup">Produto cadastrado com sucesso!</div>
+  </div>
+  <script src="cadastro.js"></script>
+</body>
+</html>
